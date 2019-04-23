@@ -9,3 +9,5 @@ def prime?(n)
   puts Benchmark.measure {m_range.each {|number| return false if n % number == 0}}
   true
 end
+
+prime?(15)
