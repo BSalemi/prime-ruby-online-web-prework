@@ -10,4 +10,4 @@ def prime?(n)
   true
 end
 
-puts Benchmark.measure{prime?(146)}
+puts Benchmark.measure{prime?(237)}
