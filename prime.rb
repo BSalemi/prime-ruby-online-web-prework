@@ -1,7 +1,6 @@
 require 'benchmark'
 
 def prime?(n)
- puts Benchmark.measure {
   return false if !n.integer?
   return false if n < 2
   return true if n == 2
@@ -9,5 +8,6 @@ def prime?(n)
   m_range = m.to_a
   m_range.each {|number| return false if n % number == 0}
   true
-}
 end
+
+puts Benchmark.measure{prime?(9)}
