@@ -1,4 +1,4 @@
-require 'Benchmark'
+
 
 def prime?(n)
   puts Benchmark.measure
