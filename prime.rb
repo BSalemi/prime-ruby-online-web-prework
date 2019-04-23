@@ -1,5 +1,7 @@
-# Add  code here!
+require 'Benchmark'
+
 def prime?(n)
+  puts Benchmark.measure
   return false if !n.integer?
   return false if n < 2
   return true if n == 2
