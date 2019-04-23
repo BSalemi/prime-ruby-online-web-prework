@@ -1,4 +1,3 @@
-require 'benchmark'
 
 def prime?(n)
   return false if !n.integer?
@@ -6,8 +5,6 @@ def prime?(n)
   return true if n == 2
   m = (2..Math.sqrt(n))
   m_range = m.to_a
-  puts Benchmark.measure {m_range.each {|number| return false if n % number == 0}}
+  m_range.each {|number| return false if n % number == 0}
   true
 end
-
-prime?(15)
